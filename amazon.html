@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Amazon  Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #232f3e;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .box {
+            background-color: white;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .box img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+        .button {
+            background-color: #ffd814;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+        .button:hover {
+            background-color: #f7ca00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mini Amazon Store</h1>
+    </header>
+
+    <div class="grid">
+        <div class="box">
+            <img src="https://via.placeholder.com/200x200?text=Laptop" alt="Laptop">
+            <h3>HP Laptop</h3>
+            <p class="price">$599.99</p>
+            <button class="button">Add to Cart</button>
+        </div>
+        <div class="box">
+            <img src="https://via.placeholder.com/200x200?text=Headphones" alt="Headphones">
+            <h3>Wireless Headphones</h3>
+            <p class="price">$89.99</p>
+            <button class="button">Add to Cart</button>
+        </div>
+        <div class="box">
+            <img src="https://via.placeholder.com/200x200?text=Smartphone" alt="Smartphone">
+            <h3>Smartphone X</h3>
+            <p class="price">$799.99</p>
+            <button class="button">Add to Cart</button>
+        </div>
+        <div class="box">
+            <img src="https://via.placeholder.com/200x200?text=Watch" alt="Watch">
+            <h3>Smart Watch</h3>
+            <p class="price">$149.99</p>
+            <button class="button">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>
